@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debarshi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- GLOBAL BACKGROUND BLOCK: Place once after <body data-theme="dark"> -->
+    <div class="hero-bg-global">
+      <div class="bg-shapes">
+        <span class="dot cyan"></span>
+        <span class="dot green"></span>
+        <span class="dot purple"></span>
+        <span class="dot orange"></span>
+        <span class="dot pink"></span>
+      </div>
+    </div>
+    <div class="dot-field"></div>
+
+    <div id="page-wrapper">
+        <!-- Loading Screen -->
+        <div id="loader" class="loader">
+            <div class="loader-content">
+                <div class="loader-spinner"></div>
+                <div class="loader-text">Loading Portfolio...</div>
+            </div>
+        </div>
+
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress"></div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">Debarshi Putatunda</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+                        <li><a href="#career" class="nav-link" data-section="career">Career</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon sun-icon">☀️</span>
+                        <span class="theme-icon moon-icon">🌙</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Home Section -->
+            <section id="home" class="section home-section active">
+                <div class="container">
+                    
+            <div class="decorative-sparkles">
+            <span class="sparkle sparkle-1"></span>
+            <span class="sparkle sparkle-2"></span>
+            <span class="sparkle sparkle-3"></span>
+            </div>
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="typing-text">Hello, I'm Debarshi Putatunda</span>
+                            </h1>
+                            <p class="hero-subtitle">B.Tech Electrical Engineering Graduate</p>
+                            <p class="hero-description">Recent B.Tech graduate in Electrical Engineering with a growing passion for solving problems through code and intuitive digital experiences. Exploring opportunities in web development and software engineering.</p>
+                            <div class="hero-buttons">
+                                <button class="btn btn--primary" data-section="projects">View Projects</button>
+                                <button class="btn btn--outline" data-section="contact">Get In Touch</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-preview">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="HTML/CSS" data-level="85">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="JavaScript" data-level="75">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="React" data-level="65">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Python" data-level="70">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-subtitle">Showcase of my recent work and creative projects</p>
+                    </div>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card" data-category="web">
+                            <div class="project-image">
+                                <div class="project-placeholder">Portfolio Website</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Modern Portfolio Website</h3>
+                                <p class="project-description">A responsive portfolio website with dark mode, animations, and modern design patterns.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                    <a href="#" class="project-link" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="fullstack">
+                            <div class="project-image">
+                                <div class="project-placeholder">E-Commerce Platform</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-Commerce Platform</h3>
+                                <p class="project-description">Full-stack e-commerce solution with user authentication and payment integration.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                    <a href="#" class="project-link" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="web">
+                            <div class="project-image">
+                                <div class="project-placeholder">Task Manager</div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Task Management App</h3>
+                                <p class="project-description">Collaborative task management application with real-time updates.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">CSS3</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link" target="_blank">Live Demo</a>
+                                    <a href="#" class="project-link" target="_blank">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements" class="section achievements-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Achievements</h2>
+                        <p class="section-subtitle">Milestones and accomplishments in my journey</p>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item" data-year="2024">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2024</div>
+                                <h3 class="timeline-title">B.Tech Graduation</h3>
+                                <p class="timeline-description">Graduated with B.Tech in Electrical Engineering from Techno Main Salt Lake</p>
+                                <span class="timeline-category education">Education</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2023">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2023</div>
+                                <h3 class="timeline-title">Web Development Certification</h3>
+                                <p class="timeline-description">Completed comprehensive web development course covering modern frameworks</p>
+                                <span class="timeline-category certification">Certification</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-year="2023">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2023</div>
+                                <h3 class="timeline-title">Hackathon Winner</h3>
+                                <p class="timeline-description">Won first place in college hackathon for innovative web application</p>
+                                <span class="timeline-category competition">Competition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Section -->
+            <section id="career" class="section career-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Career Journey</h2>
+                        <p class="section-subtitle">Professional experience and career progression</p>
+                    </div>
+                    <div class="career-timeline">
+                        <div class="career-item current">
+                            <div class="career-marker"></div>
+                            <div class="career-content">
+                                <div class="career-period">2024 - Present</div>
+                                <h3 class="career-position">Freelance Web Developer</h3>
+                                <div class="career-company">Self-Employed</div>
+                                <p class="career-description">Working on various web development projects, specializing in modern front-end technologies</p>
+                                <span class="career-status current-role">Current Role</span>
+                            </div>
+                        </div>
+                        <div class="career-item">
+                            <div class="career-marker"></div>
+                            <div class="career-content">
+                                <div class="career-period">2023</div>
+                                <h3 class="career-position">Intern - Software Development</h3>
+                                <div class="career-company">Tech Startup</div>
+                                <p class="career-description">Gained hands-on experience in full-stack development and agile methodologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-subtitle">Let's collaborate and create something amazing together</p>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h4>
+                                    <svg class="social-icon" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24">
+                                        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.82L12 10.09l9.544-6.269h.82c.904 0 1.636.732 1.636 1.636z"/>
+                                    </svg>
+                                    Email
+                                </h4>
+                                <a href="mailto:debarship02@gmail.com">debarship02@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <h4>
+                                    <svg class="social-icon" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    LinkedIn
+                                </h4>
+                                <a href="https://www.linkedin.com/in/debarshi-putatunda" target="_blank">linkedin.com/in/debarshi-putatunda</a>
+                            </div>
+                            <div class="contact-item">
+                                <h4>
+                                    <svg class="social-icon" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    GitHub
+                                </h4>
+                                <a href="https://github.com/debarshiputatunda" target="_blank">github.com/debarshiputatunda</a>
+                            </div>
+                        </div>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2025 Debarshi Putatunda. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/debarshiputatunda" target="_blank" aria-label="GitHub">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/debarshi-putatunda" target="_blank" aria-label="LinkedIn">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:debarship02@gmail.com" aria-label="Email">
+                            <svg class="social-icon" viewBox="0 0 24 24">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.82L12 10.09l9.544-6.269h.82c.904 0 1.636.732 1.636 1.636z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
