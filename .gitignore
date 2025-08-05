@@ -1,1 +1,63 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# VS Code settings
 .vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Backup files
+*~
+*.swp
+*.swo
+*.tmp
+
+# Node modules (future-proof for future JS packages)
+node_modules/
+
+# Miscellaneous
+coverage/
+dist/
+build/
+.cache/
+.env
+.env.local
+.env.*.local
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# IDE folders
+.idea/
+*.iml
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
