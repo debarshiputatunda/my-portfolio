@@ -9,7 +9,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 ## 🌐 Live Demo
 
-🔗 [View Website](https://your-username.github.io/your-repo-name)
+🔗 [![View Portfolio Live](https://img.shields.io/badge/Live%20Portfolio-Click%20Here-brightgreen?style=for-the-badge&logo=github)](https://debarshiputatunda.github.io/my-portfolio/)
 
 > _📌 Update the link above after GitHub Pages is enabled in repo settings._
 
