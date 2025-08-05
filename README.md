@@ -1,5 +1,4 @@
-# my-portfolio
-Portfolio Website. Updates maybe delayed, but will surely add more things. ;)
+
 # 💼 Personal Portfolio - Debarshi Putatunda
 
 ![GitHub Repo Theme](https://img.shields.io/badge/theme-light%20%7C%20dark-blueviolet?style=flat-square&logo=github&logoColor=white)
@@ -66,8 +65,6 @@ OR just drag and drop the `index.html` into your browser.
 ---
 
 ## 📸 Screenshots
-
-> 💡 Tip: You can upload screenshots to your repo and reference them here like this:
 
 ```markdown
 ![Screenshot 1](images/screenshot1.png)
